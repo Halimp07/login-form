@@ -18,6 +18,8 @@ git clone https://github.com/Halimp07/responsive-login-form.git
  <a href="#">
       <img width="1200" alt="login" src="https://github.com/Halimp07/login-form/blob/main/images/readme/login.png">
       <img width="1200" alt="register" src="https://github.com/Halimp07/login-form/blob/main/images/readme/register.png">
-   <img width="500" alt="loginResponsive" src="https://github.com/Halimp07/login-form/blob/main/images/readme/login-responsive.png">
-      <img width="500" alt="registerResponsive" src="https://github.com/Halimp07/login-form/blob/main/images/readme/register-responsive.png">
+   <div align="center">
+     <img width="300" alt="loginResponsive" src="https://github.com/Halimp07/login-form/blob/main/images/readme/login-responsive.png">
+     <img width="300" alt="registerResponsive" src="https://github.com/Halimp07/login-form/blob/main/images/readme/register-responsive.png">
+   </div>
 </a>
