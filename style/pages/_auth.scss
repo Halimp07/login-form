@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+$primary: #0b20e9;
+$secondary: #ffffff;
 
 .signinup {
   position: relative;
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: $secondary;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +40,7 @@
     position: relative;
     width: 800px;
     height: 500px;
-    background: #fff;
+    background: $secondary;
     overflow: hidden;
     border-radius: 20px;
 
@@ -52,7 +56,7 @@
         position: relative;
         width: 50%;
         height: 100%;
-        background: #0b20e9;
+        background: $primary;
         transition: 0.5s;
 
         img {
@@ -69,7 +73,7 @@
         position: relative;
         width: 50%;
         height: 100%;
-        background: #fff;
+        background: $secondary;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -105,8 +109,8 @@
 
           input[type="submit"] {
             max-width: 100px;
-            background-image: linear-gradient(to right, #0b20e9, #122587);
-            color: #fff;
+            background-image: linear-gradient(to right, $primary, #122587);
+            color: $secondary;
             cursor: pointer;
             font-size: 14px;
             font-weight: 500;
@@ -116,9 +120,9 @@
 
           input[type="submit"]:hover {
             max-width: 100px;
-            background: #fff;
+            background: $secondary;
             color: #122587;
-            border: solid #0b20e9;
+            border: solid $primary;
             cursor: pointer;
             font-size: 14px;
             font-weight: 500;
@@ -192,8 +196,37 @@
     .icon-hide {
       width: 20px;
       height: 20px;
-      fill: #0b20e9;
+      fill: $primary;
       cursor: pointer;
     }
+  }
+}
+
+.outer {
+  writing-mode: tb-rl;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  .first-text {
+    font-family: "Bebas Neue", cursive;
+    font-size: 3em;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(gold, gold);
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    transition: background-size 0.7s, background-position 0.5s ease-in-out;
+  }
+
+  .first-text:hover {
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    transition: background-position 0.7s, background-size 0.5s ease-in-out;
+  }
+
+  .inner {
+    transform: rotate(180deg);
+    text-align: center;
   }
 }
